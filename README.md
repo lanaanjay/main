@@ -1,85 +1,65 @@
-<p align="center">
-  <a href="https://github.com/[username]/[repo-name]">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&pause=1000&color=60A5FA&center=true&vCenter=true&width=500&lines=Lanjay;Cloudflare+Full-Stack+Boilerplate" alt="Lanjay - Cloudflare Powered" />
-  </a>
-</p>
+# Information Technology Project Management
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Cloudflare-%23F38020.svg?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" />
-  <img src="https://img.shields.io/badge/Wrangler-%23F38020?style=for-the-badge&logo=cloudflare-workers&logoColor=white" alt="Wrangler" />
-  <img src="https://img.shields.io/badge/Workers-Edge%20Runtime-blueviolet?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Workers" />
-  <img src="https://img.shields.io/badge/Pages-Frontend%20Hosting-FF69B4?style=for-the-badge&logo=cloudflare-pages&logoColor=white" alt="Pages" />
-  <img src="https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-</p>
+A course project for **Information Technology Project Management**, showcasing structured project execution, documentation, and version control using GitHub.
 
-<p align="center">
-  <strong>Modern · Performant · Edge-first · Full-stack Cloudflare boilerplate</strong><br>
-  Built for learning clean architecture, Agile workflow, and blazing-fast deployment
-</p>
+## 📋 Project Overview
 
-<p align="center">
-  <a href="#overview">Overview</a> •
-  <a href="#features">Features</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#project-structure">Structure</a> •
-  <a href="#getting-started">Get Started</a> •
-  <a href="#deployment">Deploy</a> •
-  <a href="#contributing">Contributing</a>
-</p>
+This repository serves as the central hub for managing and documenting the course project. It demonstrates key project management practices including planning, tracking, documentation, and collaboration using GitHub.
 
-<br>
+## 🎯 Project Objectives
 
-## ✨ Features
+- Apply IT project management methodologies to a real-world scenario
+- Demonstrate effective use of GitHub for version control and collaboration
+- Produce comprehensive project documentation and deliverables
+- Practice structured project execution from inception to completion
 
-- ⚡ **Edge-first architecture** — Everything runs on Cloudflare's global network
-- 🛠 **Separated backend & frontend** in monorepo style
-- 🔧 **Wrangler** for local dev + deployment (both Workers & Pages)
-- 🚀 **Zero-config CI/CD** potential with GitHub Actions + Cloudflare
-- 📊 **Agile workflow** integrated with **Jira**
-- 🧹 Clean folder structure + TypeScript ready
-- 🌐 **Frontend**: Static + possible SPA (React/Vue/Svelte-ready)
-- 🔒 Built-in utils, services, routes pattern for scalability
+## 📁 Repository Structure
 
-<br>
+```
+main/
+├── README.md              # Project overview and documentation
+├── LICENSE                # Project license
+├── CONTRIBUTING.md        # Contribution guidelines
+└── docs/
+    ├── project-plan.md    # Detailed project plan and schedule
+    └── milestones.md      # Project milestones and deliverables
+```
 
-## 🛠 Tech Stack
+## 🗓️ Project Phases
 
-| Layer         | Technology                          | Purpose                              |
-|---------------|-------------------------------------|--------------------------------------|
-| Backend       | Cloudflare Workers                  | Serverless API & edge logic          |
-| CLI/Deploy    | Wrangler                            | Local dev, deploy, bindings          |
-| Frontend      | Cloudflare Pages                    | Jamstack / SPA hosting               |
-| Language      | TypeScript                          | Type safety across full-stack        |
-| Task Mgmt     | Jira + Agile                        | Sprint planning & issue tracking     |
-| VCS           | GitHub                              | Source control & collaboration       |
+| Phase | Description | Status |
+|-------|-------------|--------|
+| 1. Initiation | Define project scope, objectives, and stakeholders | ✅ Complete |
+| 2. Planning | Develop project plan, schedule, and resource allocation | ✅ Complete |
+| 3. Execution | Implement project deliverables and manage progress | 🔄 In Progress |
+| 4. Monitoring & Control | Track progress, manage risks, and control changes | 🔄 In Progress |
+| 5. Closure | Finalize deliverables and conduct project review | ⏳ Pending |
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,cloudflare,git,github,vscode&theme=dark&perline=7" alt="Tech icons" />
-</p>
+## 👥 Team
 
-<br>
+| Role | Responsibility |
+|------|---------------|
+| Project Manager | Overall project coordination and stakeholder communication |
+| Team Lead | Technical oversight and team coordination |
+| Developer(s) | Implementation of project deliverables |
+| QA/Tester | Quality assurance and testing |
 
-## 📂 Project Structure
+## 🚀 Getting Started
 
-<details>
-<summary><strong>Click to expand folder structure</strong> 🗂️</summary>
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/lanaanjay/main.git
+   ```
+2. Review the [project plan](docs/project-plan.md) to understand the project scope and schedule
+3. Check [milestones](docs/milestones.md) for current deliverables and deadlines
+4. Read the [contributing guidelines](CONTRIBUTING.md) before making any contributions
 
-```text
-.
-├── src
-│   ├── backend               # Cloudflare Worker backend
-│   │   ├── index.ts          # Main entry point
-│   │   ├── routes            # Route handlers / API endpoints
-│   │   ├── services          # Business logic, external integrations
-│   │   └── utils             # Helpers, validators, formatters
-│   └── frontend              # Cloudflare Pages frontend
-│       ├── index.html        # Entry point
-│       ├── src               # Source code (components, pages, etc)
-│       ├── components        # Reusable UI components
-│       └── assets            # Static images, fonts, etc
-├── public                    # Static assets served directly
-├── wrangler.toml             # Worker + Pages config
-├── package.json              # Dependencies & scripts
-├── tsconfig.json             # TypeScript config
-├── README.md
-└── .gitignore
+## 📚 Documentation
+
+- [Project Plan](docs/project-plan.md) – Full project plan including scope, schedule, and resources
+- [Milestones](docs/milestones.md) – Key milestones and deliverable deadlines
+- [Contributing Guidelines](CONTRIBUTING.md) – How to contribute to this project
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
