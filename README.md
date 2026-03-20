@@ -1,55 +1,85 @@
-# Project Name
-
 <p align="center">
-  <svg width="760" height="160" viewBox="0 0 760 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project banner">
-    <rect x="1" y="1" width="758" height="158" rx="18" fill="#0B1220" stroke="#334155"/>
-    <rect x="32" y="32" width="104" height="96" rx="14" fill="#111827" stroke="#475569"/>
-    <path d="M58 78L80 56L102 78L80 100L58 78Z" fill="#60A5FA"/>
-    <path d="M80 44V56" stroke="#93C5FD" stroke-width="4" stroke-linecap="round"/>
-    <path d="M80 100V112" stroke="#93C5FD" stroke-width="4" stroke-linecap="round"/>
-    <path d="M44 78H56" stroke="#93C5FD" stroke-width="4" stroke-linecap="round"/>
-    <path d="M104 78H116" stroke="#93C5FD" stroke-width="4" stroke-linecap="round"/>
-    <rect x="172" y="38" width="520" height="16" rx="8" fill="#1F2937"/>
-    <rect x="172" y="66" width="420" height="12" rx="6" fill="#334155"/>
-    <rect x="172" y="90" width="480" height="12" rx="6" fill="#334155"/>
-    <rect x="172" y="114" width="360" height="12" rx="6" fill="#334155"/>
-    <text x="172" y="145" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="14">
-      Cloudflare Wrangler · Workers · Pages · Agile · Jira
-    </text>
-  </svg>
+  <a href="https://github.com/[username]/[repo-name]">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&pause=1000&color=60A5FA&center=true&vCenter=true&width=500&lines=Lanjay;Cloudflare+Full-Stack+Boilerplate" alt="Lanjay - Cloudflare Powered" />
+  </a>
 </p>
 
-## Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Cloudflare-%23F38020.svg?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" />
+  <img src="https://img.shields.io/badge/Wrangler-%23F38020?style=for-the-badge&logo=cloudflare-workers&logoColor=white" alt="Wrangler" />
+  <img src="https://img.shields.io/badge/Workers-Edge%20Runtime-blueviolet?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Workers" />
+  <img src="https://img.shields.io/badge/Pages-Frontend%20Hosting-FF69B4?style=for-the-badge&logo=cloudflare-pages&logoColor=white" alt="Pages" />
+  <img src="https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</p>
 
-Repository ini dibuat untuk mendukung pengembangan project berbasis Cloudflare dengan struktur terpisah antara backend dan frontend.
+<p align="center">
+  <strong>Modern · Performant · Edge-first · Full-stack Cloudflare boilerplate</strong><br>
+  Built for learning clean architecture, Agile workflow, and blazing-fast deployment
+</p>
 
-Project ini menggunakan:
+<p align="center">
+  <a href="#overview">Overview</a> •
+  <a href="#features">Features</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#project-structure">Structure</a> •
+  <a href="#getting-started">Get Started</a> •
+  <a href="#deployment">Deploy</a> •
+  <a href="#contributing">Contributing</a>
+</p>
 
-- `Wrangler` untuk deployment dan local development
-- `Cloudflare Workers` untuk backend
-- `Cloudflare Pages` untuk frontend
-- `Jira` untuk manajemen tugas secara Agile
-- `GitHub` sebagai repository utama dan version control
+<br>
 
-Project ini disusun sebagai bagian dari proses pembelajaran dan implementasi praktik pengelolaan proyek software secara terstruktur.
+## ✨ Features
 
-## Project Structure
+- ⚡ **Edge-first architecture** — Everything runs on Cloudflare's global network
+- 🛠 **Separated backend & frontend** in monorepo style
+- 🔧 **Wrangler** for local dev + deployment (both Workers & Pages)
+- 🚀 **Zero-config CI/CD** potential with GitHub Actions + Cloudflare
+- 📊 **Agile workflow** integrated with **Jira**
+- 🧹 Clean folder structure + TypeScript ready
+- 🌐 **Frontend**: Static + possible SPA (React/Vue/Svelte-ready)
+- 🔒 Built-in utils, services, routes pattern for scalability
 
-```bash
+<br>
+
+## 🛠 Tech Stack
+
+| Layer         | Technology                          | Purpose                              |
+|---------------|-------------------------------------|--------------------------------------|
+| Backend       | Cloudflare Workers                  | Serverless API & edge logic          |
+| CLI/Deploy    | Wrangler                            | Local dev, deploy, bindings          |
+| Frontend      | Cloudflare Pages                    | Jamstack / SPA hosting               |
+| Language      | TypeScript                          | Type safety across full-stack        |
+| Task Mgmt     | Jira + Agile                        | Sprint planning & issue tracking     |
+| VCS           | GitHub                              | Source control & collaboration       |
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,cloudflare,git,github,vscode&theme=dark&perline=7" alt="Tech icons" />
+</p>
+
+<br>
+
+## 📂 Project Structure
+
+<details>
+<summary><strong>Click to expand folder structure</strong> 🗂️</summary>
+
+```text
 .
 ├── src
-│   ├── backend
-│   │   ├── index.ts
-│   │   ├── routes
-│   │   ├── services
-│   │   └── utils
-│   └── frontend
-│       ├── index.html
-│       ├── src
-│       ├── components
-│       └── assets
-├── public
-├── wrangler.toml
-├── package.json
+│   ├── backend               # Cloudflare Worker backend
+│   │   ├── index.ts          # Main entry point
+│   │   ├── routes            # Route handlers / API endpoints
+│   │   ├── services          # Business logic, external integrations
+│   │   └── utils             # Helpers, validators, formatters
+│   └── frontend              # Cloudflare Pages frontend
+│       ├── index.html        # Entry point
+│       ├── src               # Source code (components, pages, etc)
+│       ├── components        # Reusable UI components
+│       └── assets            # Static images, fonts, etc
+├── public                    # Static assets served directly
+├── wrangler.toml             # Worker + Pages config
+├── package.json              # Dependencies & scripts
+├── tsconfig.json             # TypeScript config
 ├── README.md
 └── .gitignore
